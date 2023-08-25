@@ -33,7 +33,7 @@
     padding: 8px 12px;
     border-radius: 12px;
     word-wrap: break-word; /* Wrap long words to prevent overflow */
-    align-self: flex-start; /* Align user messages to the right */
+    /* align-self: flex-start; Align user messages to the right */
     margin: 8px;
     padding: 8px 12px;
     border-radius: 12px;
@@ -172,4 +172,10 @@ margin-top: 20px;
 }
 .stop{
   height: 30px;
+}
+.gif{
+  width: 100px;
+}
+.ai-message{
+  align-self: flex-start;
 }

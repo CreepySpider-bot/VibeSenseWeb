@@ -27,7 +27,7 @@ app.post('/', async (req, res) => {
     const  mildly_positive= "ST44qsH1FGEQnrnHCTwIK64NdMrSEFsYUfU_OcEKX8g"; // Discord moderator
     const  mildly_negative= "uaorvJTzWoiC1xGqCzD0RGR9Whex4Wn5HSxBsG4amwM"; // Discord moderator
 
-    const chat = await characterAI.createOrContinueChat(negative_depressed);
+    const chat = await characterAI.createOrContinueChat(positive_happy);
 
     const response = await chat.sendAndAwaitResponse(input, true);
     res.json({ aiResponse: response.text });

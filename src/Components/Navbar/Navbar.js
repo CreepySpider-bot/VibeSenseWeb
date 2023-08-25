@@ -3,9 +3,9 @@ import "./Navbar.css"
 function Navbar() {
   return (
     <div className='nav'>
-      <h2>Logo</h2>
+      <img style={{"width":"250px","mixBlendMode":"color-burn"}} src='logo.png'/>
       <div className='elements'>
-        <h4>abx</h4>
+        <h4>abc</h4>
         <h4>xyz</h4>
       </div>
     </div>

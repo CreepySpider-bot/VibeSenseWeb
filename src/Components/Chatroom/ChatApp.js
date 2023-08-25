@@ -2,11 +2,15 @@ import React, { useState, useRef, useEffect } from 'react';
 import './ChatApp.css'; // Import your CSS file for styling
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import Micbtn from '../MicBtn/Micbtn';
+import { useSpeechSynthesis } from 'react-speech-kit';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Typewriter from "typewriter-effect";
 
-const ChatBubble = ({ text, isUser }) => (
+const ChatBubble = ({ text, isUser , gifLink }) => (
   <div className={`chat-bubble ${isUser ? 'user' : 'bot'}`}>
-    {text}
+    {gifLink===""?
+    <h3>{text}</h3>:<img className="gif" src={gifLink}/>
+    }
   </div>
 );
 
@@ -19,17 +23,29 @@ const ChatContainer = ({ chatHistory }) => {
   }, [chatHistory]);
 
   return (
-    <div className="chat-container">
-      {chatHistory.map((message, index) => (
-        <ChatBubble
-          key={index}
-          text={message.text}
-          isUser={message.isUser}
-        />
-      ))}
-      <div ref={chatEndRef} />
+    // <div className="chat-container">
+    //   {chatHistory.map((message, index) => (
+    //     <ChatBubble
+    //       key={index}
+    //       text={message.text}
+    //       isUser={message.isUser}
+    //     />
+    //   ))}
+    //   <div ref={chatEndRef} />
       
+    // </div>
+    <div className="chat-container">
+  {chatHistory.map((message, index) => (
+    <div key={index} className={`message ${message.isUser ? 'user-message' : 'ai-message'}`}>
+      {message.isLoading ? (
+        <ChatBubble text={""} isUser={message.isUser} gifLink={"https://media.tenor.com/NqKNFHSmbssAAAAi/discord-loading-dots-discord-loading.gif"}/>
+      ) : (
+        <ChatBubble text={message.text} isUser={message.isUser} gifLink={""} />
+      )}
     </div>
+  ))}
+  <div ref={chatEndRef} />
+</div>
   );
 };
 
@@ -37,6 +53,7 @@ const ChatApp = () => {
   const [chatHistory, setChatHistory] = useState([]);
   const [inputValue,setInputValue] = useState("");
   const [response, setResponse] = useState('');
+  const {speak,voices} = useSpeechSynthesis();
   
 
 
@@ -52,7 +69,15 @@ const ChatApp = () => {
   }, [transcript]);
 
   const handleUserMessage = async (userText) => {
+    setChatHistory((prevHistory) => [
+      ...prevHistory,
+      { text: userText, isUser: true }
+    ]);
     try {
+      setChatHistory((prevHistory) => [
+        ...prevHistory,
+        { isLoading: true, isUser: false }
+      ]);
       console.log("in try");
       const response = await fetch('http://localhost:3001/', {
         method: 'POST',
@@ -67,12 +92,23 @@ const ChatApp = () => {
       const aiResponse = data.aiResponse;
   
       resetTranscript();
-  
       setChatHistory((prevHistory) => [
-        ...prevHistory,
-        { text: userText, isUser: true },
+        ...prevHistory.slice(0, -1), // Remove the loading animation
         { text: aiResponse, isUser: false },
       ]);
+      if(aiResponse.split(" ")[0]==="ronit" || aiResponse.split(" ")[0]==="Ronit"){
+        speak({text:aiResponse, voice:voices[0]})
+      }else if(aiResponse.split(" ")[0]==="shweta") {
+        speak({text:aiResponse , voice: voices[2]})
+      }
+      else{
+        speak({text:aiResponse , voice: voices[2]})
+      }
+      // setChatHistory((prevHistory) => [
+      //   ...prevHistory,
+      //   { text: userText, isUser: true },
+      //   { text: aiResponse, isUser: false },
+      // ]);
     } catch (error) {
       console.error(error);
     }
