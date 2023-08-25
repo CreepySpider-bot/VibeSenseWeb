@@ -3,7 +3,7 @@ import "./Navbar.css"
 function Navbar() {
   return (
     <div className='nav'>
-      <img src='wellnesswhisper-logo.png' className='logo'></img>
+      <h2>Logo</h2>
       <div className='elements'>
         <h4>abx</h4>
         <h4>xyz</h4>

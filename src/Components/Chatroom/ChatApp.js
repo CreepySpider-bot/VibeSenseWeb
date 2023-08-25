@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './ChatApp.css'; // Import your CSS file for styling
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
-
+import Micbtn from '../MicBtn/Micbtn';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const ChatBubble = ({ text, isUser }) => (
   <div className={`chat-bubble ${isUser ? 'user' : 'bot'}`}>
@@ -27,6 +28,7 @@ const ChatContainer = ({ chatHistory }) => {
         />
       ))}
       <div ref={chatEndRef} />
+      
     </div>
   );
 };
@@ -81,7 +83,7 @@ const ChatApp = () => {
 
 
   const startSpeech = () => {
-    SpeechRecognition.startListening({continuous: true});
+    SpeechRecognition.startListening();
     setInputValue(transcript)
     console.log(inputValue);
   }
@@ -89,24 +91,26 @@ const ChatApp = () => {
     return <span>Browser doesn't support speech recognition.</span>;
   }
 
-  const stopSpeech = () =>{
-    SpeechRecognition.stopListening();
+  // const stopSpeech = () =>{
+  //   SpeechRecognition.stopListening();
     // resetTranscript();
     // Generate the result and change the transcript to the result
     // if(transcript.split(" ")[0]=="male"){
     //   speak({text:transcript})
     // }else{
     //   speak({text:transcript , voice: voices[2]})
-    }
+    // }
     
 
   // //////////////////////////////////////////////////
   
   return (
     <div className="chat-app">
-      <ChatContainer chatHistory={chatHistory} />
+      <div className='cont'>
+        
+          {/* ------------------------------------------ */}
+          <ChatContainer chatHistory={chatHistory} />
       <div className='inp-button'>
-
       <label class="custom-field">
         <input type="text"
         placeholder="&nbsp;"
@@ -120,7 +124,6 @@ const ChatApp = () => {
         }}/>
         <span class="placeholder">Enter Prompt</span>
       </label>
-
       {/* <input
       className='input'
         type="text"
@@ -144,16 +147,24 @@ const ChatApp = () => {
             Send
           </button>
         ) : (
-          <button 
-            className="microphone-button"
-            onClick={startSpeech}
-          >🎤</button>
+          // <button 
+          //   className="microphone-button"
+          //   onClick={startSpeech}
+          // >🎤</button> display: flex; flex-direction: row; height: 100vh; align-items: center; justify-content: center;background:#1f1f28;
+          <div class="container2">
+            <div href="#" class="button active pushed mic2" onClick={startSpeech} id="pushed">
+              <img className='mic' src='mic2.png'></img>
+            </div>
+            
+          </div>
 
         )}
-        <button onClick={stopSpeech}>Stop</button>
-        <p>Microphone: {listening ? 'on' : 'off'}</p>
-        {/* <p>--->{transcript}</p> */}
+        {/* <button onClick={stopSpeech} className='stop'>Stop</button> */}
+          {/* ------------------------------------------ */}
       </div>
+      
+      </div>
+        <p>Microphone: {listening ? 'on' : 'off'}</p>
 
     </div>
   );

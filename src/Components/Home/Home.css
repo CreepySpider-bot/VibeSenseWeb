@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lexend:wght@300&family=Montserrat:wght@200;300&family=Poppins:wght@100&family=Sedgwick+Ave+Display&family=Tilt+Prism&display=swap');
+
+.dabba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+}
+.dabba2 > h1{
+    font-family: 'Caveat', cursive;
+font-family: 'Lexend', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Tilt Prism', cursive;
+font-size: 60px;
+font-weight: 100;
+}
+.dabba2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 26vh;
+}
+.abc{
+    box-sizing:border-box;transition:all 0.3s;-webkit-transition:all 0.3s;
+    margin:100px;background-color:#1d1f20;
+}
+
+.abc {position:relative;margin:0 auto;}
+
+.down-arrow {height:60px;width:60px;border:4px solid #FFF;border-radius:100%;}
+
+.down-arrow:before,.down-arrow:after {content:'';position:absolute;top:26px;width:18px;border:2px solid #FFF;transition:all 0.3s;-webkit-transition:all 0.3s;}
+
+.down-arrow:before {transform:rotateZ(45deg);-webkit-transform:rotateZ(45deg);left:9px;}
+.down-arrow:after {transform:rotateZ(-45deg);-webkit-transform:rotateZ(-45deg);left:22px;}
+
+.down-arrow:hover {cursor:pointer;border-width:0;}
+.down-arrow:hover:before,.down-arrow:hover:after {top:40px;}
+.down-arrow:hover:before {left:13px;}
+.down-arrow:hover:after {left:26px;}

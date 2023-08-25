@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 75vh; /* Set the chat app height to fill the entire viewport */
+    height: 90vh; /* Set the chat app height to fill the entire viewport */
     overflow-y: auto;
   }
   .input{
@@ -15,10 +15,10 @@
     flex: 1;
     overflow-y: auto; 
     overflow-x: auto;
-    max-height: 400px;
+    max-height: 600px;
     padding: 10px;
-    border: 3px solid whitesmoke;
-    background: #fff;
+    /* border: 3px solid whitesmoke; */
+    /* background: #fff; */
     border-radius: 20px;
     width: 90vw;
     display: flex;
@@ -59,12 +59,13 @@
     position: relative;
     font-size: 14px;
     border-top: 20px solid transparent;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
     display: inline-block;
     --field-padding: 12px;
   }
   
   .custom-field input {
+    background-color: darkblue;
     border: none;
     -webkit-appearance: none;
     -ms-appearance: none;
@@ -72,7 +73,7 @@
     appearance: none;
     background: #f2f2f2;
     padding: var(--field-padding);
-    border-radius: 40px;
+    border-radius: 10px;
     width: 70vw;
     outline: none;
     font-size: 14px;
@@ -104,3 +105,71 @@
     font-size: 10px;
     color: #222;
   }
+  .cont{
+    height: 90vh;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 2px solid white;
+    border-radius: 30px;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+margin-top: 20px;
+  }
+
+  .button{
+    border-radius:5px;
+    text-align:center;
+    height:35px;
+    line-height:45px;
+    width:35px;
+    text-decoration: none;
+    display: inline-block;
+    color: rgba(255,255,255,.4);
+    background:#282e3f;
+    border:1px solid #333947;
+    margin:20px;
+  }
+  
+  .active{
+    color:#fff;
+    background-color: #5a008d;
+    border:1px solid #5a008d;
+  }
+  
+  .pushed {
+    position: relative;
+    box-shadow: 0 0 0 0 #5a008d;
+    cursor: pointer;
+    background:#5a008d;
+    animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
+    
+    &:hover {
+      animation: none;
+    }
+  }
+  @keyframes pulse {to {box-shadow: 0 0 0 20px rgba(90, 0, 141, 0);}}
+.mic{
+  width: 20px;
+}
+.container2{
+  display: flex;
+  align-items: center;
+}
+.mic2 > img{
+  padding-top: 8px;
+}
+.inp-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stop{
+  height: 30px;
+}

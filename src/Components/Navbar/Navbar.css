@@ -12,6 +12,7 @@ font-family: 'Lexend', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Poppins', sans-serif;
 /* font-family: 'Sedgwick Ave Display', cursive; */
+background: transparent;
 }
 .elements{
     display: flex;
