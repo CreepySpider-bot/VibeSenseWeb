@@ -1,0 +1,106 @@
+/* Chat.css */
+
+.chat-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75vh; /* Set the chat app height to fill the entire viewport */
+    overflow-y: auto;
+  }
+  .input{
+    width: 70vw;
+  }
+  
+  .chat-container {
+    flex: 1;
+    overflow-y: auto; 
+    overflow-x: auto;
+    max-height: 400px;
+    padding: 10px;
+    border: 3px solid whitesmoke;
+    background: #fff;
+    border-radius: 20px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    /* justify-content: flex-end; */
+  }
+  
+  .chat-bubble {
+    max-width: 80%; /* Adjust the maximum width of chat bubbles to prevent excessive width */
+    margin: 8px;
+    padding: 8px 12px;
+    border-radius: 12px;
+    word-wrap: break-word; /* Wrap long words to prevent overflow */
+    align-self: flex-start; /* Align user messages to the right */
+    margin: 8px;
+    padding: 8px 12px;
+    border-radius: 12px;
+    word-wrap: break-word;
+    max-width: 80%;
+  }
+  
+  .user {
+    /* background-color: #007bff; */
+    background: #000;
+    color: #fff;
+    align-self: flex-end;
+  }
+  
+  .bot {
+    background-color: #e5e5ea;
+    color: #333;
+    align-self: flex-start;
+  }
+  
+
+  .custom-field {
+    position: relative;
+    font-size: 14px;
+    border-top: 20px solid transparent;
+    margin-bottom: 5px;
+    display: inline-block;
+    --field-padding: 12px;
+  }
+  
+  .custom-field input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: var(--field-padding);
+    border-radius: 40px;
+    width: 70vw;
+    outline: none;
+    font-size: 14px;
+    align-items: center;
+    margin-right: 30px;
+  }
+  
+  .custom-field .placeholder {
+    position: absolute;
+    left: var(--field-padding);
+    width: calc(100% - (var(--field-padding) * 2));
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    top: 22px;
+    line-height: 100%;
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: 
+      top 0.3s ease,
+      color 0.3s ease,
+      font-size 0.3s ease;
+  }
+  
+  .custom-field input.dirty + .placeholder,
+  .custom-field input:focus + .placeholder,
+  .custom-field input:not(:placeholder-shown) + .placeholder {
+    top: -10px;
+    font-size: 10px;
+    color: #222;
+  }
