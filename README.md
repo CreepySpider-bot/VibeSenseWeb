@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# WellnessWhisper: Mental Health Voice Assistant
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+WellnessWhisper is a mental health voice assistant that provides support and guidance to users in both English and Hindi. It offers a safe space for users to communicate their emotions and feelings, while also analyzing the sentiment and detecting relevant emotions to offer appropriate guidance.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+- [Features](#features)
+- - [Sentimental Analysis](#sentimental-analysis)
+- - [Multilingual Support](#multilingual-support)
+- [Installation](#installation)
+- [Usage](#usage)
+- - [Web Application](#web-application)
+- - [Mobile Application](#mobile-application)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+WellnessWhisper is a mental health voice assistant that aims to provide users with a platform to discuss their emotions and well-being. The assistant is equipped with features to analyze user sentiment and detect relevant emotions, offering points and guidance accordingly. The project includes both a web application and a mobile application built using React and React Native.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+WellnessWhisper employs sentiment analysis to understand the emotional state of the user based on their input. This analysis helps in gauging whether the user is feeling positive, negative, or neutral, allowing the assistant to provide appropriate responses and guidance.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Multilingual Support
 
-### `npm run build`
+The voice assistant supports communication in both English and Hindi. Users can express their emotions and thoughts in either language, ensuring a comfortable and inclusive experience for a diverse range of users.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Provide instructions on how to install and set up both the web application and the mobile application. Include any dependencies that need to be installed, configuration steps, etc.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Web Application
+### Demo Images of App
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/b7UGr6R" data-context="false" ><a href="//imgur.com/a/b7UGr6R"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-### `npm run eject`
+###Demo Images of Website
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/3A4i8sq" data-context="false" ><a href="//imgur.com/a/3A4i8sq"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
