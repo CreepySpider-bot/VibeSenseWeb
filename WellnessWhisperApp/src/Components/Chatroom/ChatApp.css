@@ -179,10 +179,3 @@ margin-top: 20px;
 .ai-message{
   align-self: flex-start;
 }
-.send-button{
-  background: #5a008d;
-  color: white;
-  height: 50px;
-  width: 70px;
-  border-radius: 5px;
-}

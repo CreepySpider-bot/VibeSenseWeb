@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lexend:wght@300&family=Montserrat:wght@200;300&family=Poppins:wght@100&family=Sedgwick+Ave+Display&display=swap');
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-family: 'Caveat', cursive;
+font-family: 'Lexend', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+/* font-family: 'Sedgwick Ave Display', cursive; */
+background: transparent;
+}
+.elements{
+    display: flex;
+    gap: 50px;
+}
+.logo{
+    max-width: 100px;
+}
