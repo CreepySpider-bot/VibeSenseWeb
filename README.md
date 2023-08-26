@@ -34,8 +34,22 @@ Provide instructions on how to install and set up both the web application and t
 
 ### Web Application
 ### Demo Images of App
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/b7UGr6R" data-context="false" ><a href="//imgur.com/a/b7UGr6R"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+![Screenshot_2023-08-26-08-06-40-67_0dd8a18136059e9b12c7eeb8ad44a709](https://github.com/CreepySpider-bot/WellnessWhisper/assets/90510951/eabcc3e4-866a-4c21-aec8-e90a45f58180)
+![Screenshot_2023-08-26-08-07-00-72_0dd8a18136059e9b12c7eeb8ad44a709](https://github.com/CreepySpider-bot/WellnessWhisper/assets/90510951/56e8f343-dcfe-4895-ac93-1e119cf8f9aa)
+![Screenshot_2023-08-26-08-05-55-29_0dd8a18136059e9b12c7eeb8ad44a709](https://github.com/CreepySpider-bot/WellnessWhisper/assets/90510951/0ceab5bc-bc60-4ea7-91d4-2f233f4d827d)
+![Screenshot_2023-08-26-08-06-13-50_0dd8a18136059e9b12c7eeb8ad44a709](https://github.com/CreepySpider-bot/WellnessWhisper/assets/90510951/fec3c9e4-5bba-44e6-a921-007190b26b05)
+![Screenshot_2023-08-26-08-06-30-11_0dd8a18136059e9b12c7eeb8ad44a709](https://github.com/CreepySpider-bot/WellnessWhisper/assets/90510951/f64fa330-295a-4702-a69a-dca2ec635105)
+![Screenshot_2023-08-26-08-08-03-63_0dd8a18136059e9b12c7eeb8ad44a709](https://github.com/CreepySpider-bot/WellnessWhisper/assets/90510951/f644149e-bb70-4ebe-889a-634bee1e921b)
+![Screenshot_2023-08-26-08-08-17-87_0dd8a18136059e9b12c7eeb8ad44a709](https://github.com/CreepySpider-bot/WellnessWhisper/assets/90510951/02d8eb15-3f98-4717-8174-3b6b1b8d91f2)
+![Screenshot_2023-08-26-08-06-46-61_0dd8a18136059e9b12c7eeb8ad44a709](https://github.com/CreepySpider-bot/WellnessWhisper/assets/90510951/8593f2be-01b3-493b-87dd-eda924441269)
+![Screenshot_2023-08-26-08-08-30-67_0dd8a18136059e9b12c7eeb8ad44a709](https://github.com/CreepySpider-bot/WellnessWhisper/assets/90510951/6bff43d3-6217-4e7d-8733-6de5f147f713)
+
 
 ###Demo Images of Website
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/3A4i8sq" data-context="false" ><a href="//imgur.com/a/3A4i8sq"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+![Screenshot 2023-08-26 022643](https://github.com/CreepySpider-bot/WellnessWhisper/assets/90510951/ca0e13e3-df25-474b-a5b1-954712798c5b)
+![Screenshot 2023-08-26 023514](https://github.com/CreepySpider-bot/WellnessWhisper/assets/90510951/81666d73-601d-44cf-a4fd-97b22c8ac7a1)
+![Screenshot 2023-08-26 024158](https://github.com/CreepySpider-bot/WellnessWhisper/assets/90510951/aae9d80a-6c27-43e1-8f79-945dc3e06a09)
+![Screenshot 2023-08-26 082231](https://github.com/CreepySpider-bot/WellnessWhisper/assets/90510951/ca04944c-e1a6-4744-99a7-af0bde001275)
+![Screenshot 2023-08-26 082507](https://github.com/CreepySpider-bot/WellnessWhisper/assets/90510951/5254cd82-ec01-4253-af61-28f32580b07a)
+
 
